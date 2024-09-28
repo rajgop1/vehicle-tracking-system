@@ -38,6 +38,6 @@ donut_inner:
 
 dataKey: status
 nameKey: trip
-innerRadius: 50
+innerRadius: 80
 
 ---

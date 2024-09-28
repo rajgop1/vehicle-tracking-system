@@ -4,16 +4,16 @@ description: null
 chartData:
   - alert: "main_power_loss"
     status: 20
-    fill: "#991b1b"
+    fill: "#3f6212"
   - alert: "vehice_accident"
     status: 5
-    fill: "#ef4444"
+    fill: "#3730a3"
   - alert: "red_zone_area"
     status: 20
     fill: "#dc2626"
   - alert: "theft_alert"
     status: 3
-    fill: "#fca5a5"
+    fill: "#c026d3"
   
 
 chartConfig:
@@ -38,6 +38,6 @@ donut_inner:
 
 dataKey: status
 nameKey: alert
-innerRadius: 40
+innerRadius: 80
 
 ---

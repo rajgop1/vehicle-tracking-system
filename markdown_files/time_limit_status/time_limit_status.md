@@ -25,7 +25,7 @@ donut_inner:
 
 dataKey: status
 nameKey: time_limit
-innerRadius: 60
+innerRadius: 80
 isSemi: false
 
 ---
