@@ -33,7 +33,7 @@ export function HomeChart(tripStatus:any) {
   const innerRadius = 0
 
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col w-full">
       <CardHeader className="items-center pb-0">
         <CardTitle>{data.title}</CardTitle>
         <CardDescription>{data.description}</CardDescription>
@@ -41,7 +41,7 @@ export function HomeChart(tripStatus:any) {
       <CardContent className="flex-1 p-0 pb-0">
         <ChartContainer
           config={data.chartConfig}
-          className="mx-auto aspect-square w-full"
+          className="w-full h-full"
         >
           <PieChart>
             <ChartTooltip
