@@ -2,6 +2,6 @@
 title: Enroute Inactive
 description: null
 value: "05"
-color: "#22c55e"
+color: "#854d0e"
 cardColor: "#fef3c7"
 ---

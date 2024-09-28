@@ -1,6 +1,6 @@
 ---
 title: Trips not moved 
-description: due to Gems, VTS unsync
+description: Due to Gems, VTS unsync
 chartData:
   - time_limit: "within_time_limit"
     status: 1263

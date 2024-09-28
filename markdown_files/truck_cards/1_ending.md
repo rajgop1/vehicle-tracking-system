@@ -2,6 +2,6 @@
 title: Ending in < 2hrs
 description: null
 value: 128
-color: "#d9f99d"
+color: "#14532d"
 cardColor: "#dcfce7"
 ---

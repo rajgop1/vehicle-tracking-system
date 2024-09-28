@@ -2,6 +2,6 @@
 title: Trip without Route
 description: null
 value: "03"
-color: "#22c55e"
+color: "#1e3a8a"
 cardColor: "#dbeafe"
 ---
