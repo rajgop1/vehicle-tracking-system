@@ -1,13 +1,13 @@
 ---
-title: null
-description: Trips not moved due to Gems, VTS unsync
+title: Trips not moved 
+description: due to Gems, VTS unsync
 chartData:
   - time_limit: "within_time_limit"
     status: 1263
-    fill: "#e76e50"
+    fill: "#15803d"
   - time_limit: "out_of_time_limit"
     status: 310
-    fill: "#2a9d90"
+    fill: "#b91c1c"
 
 chartConfig:
   status:

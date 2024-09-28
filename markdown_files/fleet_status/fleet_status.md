@@ -1,16 +1,16 @@
 ---
-title: Pie Chart - Fleet Status
-description: Description for Fleet Status
+title: Fleet Status
+description: null
 chartData:
   - fleet: "runnning"
     status: 800
-    fill: "#e76e50"
+    fill: "#22c55e"
   - fleet: "stopped"
     status: 1091
-    fill: "#2a9d90"
+    fill: "#ef4444"
   - fleet: "inactive"
-    status: 30
-    fill: "#f4a462"
+    status: 200
+    fill: "#8b5cf6"
 
 chartConfig:
   status:
