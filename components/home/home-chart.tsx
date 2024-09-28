@@ -38,7 +38,7 @@ export function HomeChart(tripStatus:any) {
         <CardTitle>{data.title}</CardTitle>
         <CardDescription>{data.description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex-1 pb-0">
+      <CardContent className="flex-1 p-0 pb-0">
         <ChartContainer
           config={data.chartConfig}
           className="mx-auto aspect-square w-full"

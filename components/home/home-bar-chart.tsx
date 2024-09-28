@@ -21,12 +21,12 @@ import {
 export const description = "A bar chart with a custom label"
 
 const chartData = [
-  { date: "April-24", trips: 36000},
-  { date: "May-24", trips: 36700},
-  { date: "June-24", trips: 35400},
-  { date: "July-24", trips: 37000},
-  { date: "August-24", trips: 37500},
-  { date: "September-24", trips: 38000},
+    { date: "September-24", trips: 38000},
+    { date: "August-24", trips: 37500},
+    { date: "July-24", trips: 37000},
+    { date: "June-24", trips: 35400},
+    { date: "May-24", trips: 36700},
+    { date: "April-24", trips: 36000},
 ]
 
 const chartConfig = {

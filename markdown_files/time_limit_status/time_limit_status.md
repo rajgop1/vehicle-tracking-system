@@ -1,22 +1,22 @@
 ---
-title: Trips not moved 
-description: Due to Gems, VTS unsync
+title: Polling Count 
+description: Within 15mins
 chartData:
-  - time_limit: "within_time_limit"
-    status: 1263
+  - time_limit: "on_time_polling"
+    status: 1936
     fill: "#15803d"
-  - time_limit: "out_of_time_limit"
-    status: 310
+  - time_limit: "delay_polling"
+    status: 100
     fill: "#b91c1c"
 
 chartConfig:
   status:
     label: "Status"
-  within_time_limit:
-    label: "Within Time Limit"
+  on_time_polling:
+    label: "Ontime Polling"
     color: "hsl(var(--chart-1))"
-  out_of_time_limit:
-    label: "Out of Time Limit"
+  delay_polling:
+    label: "Delay Polling"
     color: "hsl(var(--chart-2))"
 
 donut_inner:

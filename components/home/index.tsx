@@ -14,9 +14,9 @@ export default function HomeComponent(data:any){
         <Card>
             <h1 className="text-4xl font-medium text-center my-2 md:my-4 lg:my-8 ">{data.data.title}</h1>
         </Card>
-        <main className="px-4 md:px-8 lg:px-16 xl:px-24 py-8 flex flex-col gap-8">
+        <main className="px-2 md:px-4 lg:px-8 py-8 flex flex-col gap-8">
             
-            <section className="bg-white border rounded-lg p-3 shadow-md grid grid-auto md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+            <section className="bg-white border rounded-lg p-2 shadow-md grid grid-auto md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2">
                 {
                     data.truckCards.map((card:any,index:number)=>{
                         return <HomeCard key={index} data={card}/>
