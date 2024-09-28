@@ -20,7 +20,7 @@ export default function HomeComponent(data:any){
                     })
                 }
             </section>
-            <section className="grid grid-auto lg:grid-cols-4 gap-6">
+            <section className="grid grid-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <HomeChart data={data.fleetStatus}/>
                 <HomeChart data={data.timeLimitStatus}/>
                 <HomeChart data={data.tripStatus}/>
