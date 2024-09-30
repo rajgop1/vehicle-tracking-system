@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { TrendingUp } from "lucide-react"
-import { Label, Pie, PieChart } from "recharts"
+import { Label, LabelList, Pie, PieChart } from "recharts"
 
 import {
   Card,
@@ -55,8 +55,19 @@ export function HomeChart(tripStatus:any) {
               innerRadius={data.innerRadius}
               strokeWidth={5}
               {...semiKeys}
-              label
+              
             >
+                     <LabelList
+                dataKey={data.dataKey}
+                className="fill-background"
+                stroke="none"
+                fontSize={12}
+                // formatter={(value: keyof typeof chartConfig) =>
+                //   chartConfig[value]?.label
+                // }
+              />
+
+
                 <Label
                   content={({ viewBox }) => {
                     if (viewBox && "cx" in viewBox && "cy" in viewBox) {
