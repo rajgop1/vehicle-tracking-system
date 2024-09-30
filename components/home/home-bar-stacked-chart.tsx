@@ -74,27 +74,27 @@ export function HomeBarStackedChart() {
             <Bar
               dataKey="speed"
               stackId="a"
-              fill="red"
+              fill="#b91c1c"
               width={10}
-              barSize={40}
+              barSize={20}
               radius={[0, 0, 4, 4]}
             />
             <Bar
               dataKey="mainPowerLoss"
               stackId="a"
-              fill="blue"
+              fill="#164e63"
               radius={[4, 4, 0, 0]}
             />
              <Bar
               dataKey="tripOnTime"
               stackId="a"
-              fill="green"
+              fill="#65a30d"
               radius={[4, 4, 0, 0]}
             />
             <Bar
               dataKey="tempering"
               stackId="a"
-              fill="yellow"
+              fill="#fbbf24"
               radius={[4, 4, 0, 0]}
             />
           </BarChart>

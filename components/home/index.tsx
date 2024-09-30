@@ -1,5 +1,6 @@
 "use client"
 
+import { FaTruck } from "react-icons/fa"
 import { Card } from "../ui/card"
 import { HomeBarChart } from "./home-bar-chart"
 import { HomeBarMultipleChart } from "./home-bar-mutiple-chart"
@@ -16,10 +17,18 @@ export default function HomeComponent(data:any){
         </Card>
         <main className="px-2 md:px-4 lg:px-8 py-8 flex flex-col gap-8">
             
-            <section className="bg-white border rounded-lg p-2 shadow-md grid grid-auto md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2">
+            {/* <section className="bg-white border rounded-lg p-2 shadow-md grid grid-auto md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2"> */}
+            <section className="grid grid-auto md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
                 {
                     data.truckCards.map((card:any,index:number)=>{
-                        return <HomeCard key={index} data={card}/>
+                        console.log(card)
+                        return <div className="flex flex-row justify-between rounded-lg px-4 py-3 bg-white rounded-xs shadow-sm">
+                            <div className="flex flex-col gap-1">
+                                <div className="text-4xl font-semibold">{card.value}</div>
+                                <div className="text-base font-semibold text-gray-500">{card.title}</div>
+                            </div>
+                            <FaTruck size={32} color={card?.color ?? "#1e3a8a"}/>
+                        </div>
                     })
                 }
             </section>

@@ -55,36 +55,37 @@ export function HomeChart(tripStatus:any) {
               innerRadius={data.innerRadius}
               strokeWidth={5}
               {...semiKeys}
+              label
             >
-              <Label
-                content={({ viewBox }) => {
-                  if (viewBox && "cx" in viewBox && "cy" in viewBox) {
-                    return (
-                      <text
-                        x={viewBox.cx}
-                        y={viewBox.cy}
-                        textAnchor="middle"
-                        dominantBaseline="middle"
-                      >
-                        <tspan
+                <Label
+                  content={({ viewBox }) => {
+                    if (viewBox && "cx" in viewBox && "cy" in viewBox) {
+                      return (
+                        <text
                           x={viewBox.cx}
                           y={viewBox.cy}
-                          className="fill-foreground text-3xl font-bold"
+                          textAnchor="middle"
+                          dominantBaseline="middle"
                         >
-                          {data.donut_inner?.title ?? totalVisitors.toLocaleString()}
-                        </tspan>
-                        <tspan
-                          x={viewBox.cx}
-                          y={(viewBox.cy || 0) + 24}
-                          className="fill-muted-foreground"
-                        >
-                          {data.donut_inner?.description}
-                        </tspan>
-                      </text>
-                    )
-                  }
-                }}
-              />
+                          <tspan
+                            x={viewBox.cx}
+                            y={viewBox.cy}
+                            className="fill-foreground text-3xl font-bold"
+                          >
+                            {data.donut_inner?.title ?? totalVisitors.toLocaleString()}
+                          </tspan>
+                          <tspan
+                            x={viewBox.cx}
+                            y={(viewBox.cy || 0) + 24}
+                            className="fill-muted-foreground"
+                          >
+                            {data.donut_inner?.description}
+                          </tspan>
+                        </text>
+                      )
+                    }
+                  }}
+                />
             </Pie>
             <ChartLegend
             content={<ChartLegendContent nameKey={data.nameKey} />}
