@@ -22,7 +22,7 @@ export default function HomeComponent(data:any){
                 {
                     data.truckCards.map((card:any,index:number)=>{
                         console.log(card)
-                        return <div className="flex flex-row justify-between rounded-lg px-4 py-3 bg-white rounded-xs shadow-sm">
+                        return <div key={index} className="flex flex-row justify-between rounded-lg px-4 py-3 bg-white rounded-xs shadow-sm">
                             <div className="flex flex-col gap-1">
                                 <div className="text-4xl font-semibold">{card.value}</div>
                                 <div className="text-base font-semibold text-gray-500">{card.title}</div>
